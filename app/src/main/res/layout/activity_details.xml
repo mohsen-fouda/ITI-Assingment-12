@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Mohsin.iti.ui.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivPerson"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPerson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@id/ivPerson"
+        app:layout_constraintTop_toTopOf="@id/ivPerson"
+        app:layout_constraintVertical_bias="0.132"
+        tools:text="Person" />
+
+    <TextView
+
+        android:id="@+id/textPostDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPerson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toEndOf="@id/ivPerson"
+        app:layout_constraintTop_toBottomOf="@id/textUsername"
+        app:layout_constraintVertical_bias="0.263"
+        tools:text="15/11" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
